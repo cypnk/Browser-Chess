@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chess</title>
+<style>
+* { outline: none; box-sizing: border-box; }
+body,html{ height:100%;width:100% }
+html { margin: 0; padding: 0; }
+body { 
+	font: 400 1rem sans-serif; 
+	line-height: 1.6; 
+	padding: 1rem; 
+	color: gainsboro;
+	background: darkslategray;
+	margin: 0 auto;
+	max-width: 35rem;
+}
+.bd { border-spacing: 0; border-collapse: collapse; }
+.bd td, .bd th { 
+	padding: 0.8rem;
+	text-align: center; 
+	vertical-align: middle; 
+	font-weight: 600; 
+}
+.bd td {  
+	height: 3rem;
+	font-size: 2rem;
+	color: black;
+	background: darkseagreen;
+	line-height: 0;
+	text-shadow: 0 0 1px black;
+	cursor: pointer;
+}
+.bd tr:nth-of-type(even) td:nth-of-type(even), 
+.bd tr:nth-of-type(odd) td:nth-of-type(odd) {
+	background: gainsboro;
+}
+.bd td.active {
+	outline: 5px maroon solid;
+	outline-offset: -5px;
+}
+input, textarea {
+	border: 0;
+	font: inherit
+}
+</style>
+</head>
+<body>
+
+<script src="chess.js"></script>
+</body>
+</html>
